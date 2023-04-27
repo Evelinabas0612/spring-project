@@ -3,7 +3,7 @@ function delete_task(task_id) {
     $.ajax(
         {
             url: "/",
-            /*  url: getBaseUrl(),*/
+            /*url: getBaseUrl(),*/
             type: 'DELETE',
             success: function () {
                 window.location.reload();
@@ -55,7 +55,7 @@ function update_task(task_id) {
 
     $.ajax({
         url: "/",
-        /*  url: getBaseUrl(),*/
+        /*url: getBaseUrl(),*/
         type: 'POST',
         dataType: 'json',
         contentType: 'application/json;charset=UTF-8',
@@ -77,7 +77,7 @@ function add_task(){
     $.ajax(
         {
             url: "/",
-          /*  url: getBaseUrl(),*/
+           /* url: getBaseUrl(),*/
             type: "POST",
             dataType: 'json',
             contentType: 'application/json;charset=UTF-8',
